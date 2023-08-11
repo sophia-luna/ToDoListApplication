@@ -23,7 +23,7 @@ public class Validation{
         catch(NumberFormatException e) {
             aux=0;
         }
-        return aux>0 && aux<=8;
+        return aux>0 && aux<=9;
     }
     public static boolean isPriorityValid(String str){
         int aux;

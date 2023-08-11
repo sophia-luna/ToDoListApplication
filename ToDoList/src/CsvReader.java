@@ -14,8 +14,8 @@ public class CsvReader {
             String[] data;
             while((line = br.readLine()) != null) {
                 data = line.split(delimiter);
-                //System.out.println(data[0]+' '+data[1]+' '+data[2]+' '+data[3]+' '+data[4]+' '+data[5]);
-                Task task=new Task(data[0], data[1], data[2], data[3], data[4], data[5]);
+                //System.out.println(data[0]+' '+data[1]+' '+data[2]+' '+data[3]+' '+data[4]+' '+data[5]+' '+data[6]);
+                Task task=new Task(data[0], data[1], data[2], data[3], data[4], data[5], data[6]);
                 list.add(task);
             }
             br.close();

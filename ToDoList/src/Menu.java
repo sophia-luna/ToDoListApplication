@@ -1,4 +1,5 @@
 import javax.sound.midi.Soundbank;
+import java.io.IOException;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -13,7 +14,8 @@ public class Menu {
         System.out.println("5. Filtrar tarefas por categoria");
         System.out.println("6. Filtrar tarefas por status");
         System.out.println("7. Filtrar tarefas por data");
-        System.out.println("8. Sair");
+        System.out.println("8. Adicionar alarme para tarefa");
+        System.out.println("9. Sair");
     }
 
     public static void displayList(LinkedList<Task> list) { //option 1
@@ -84,7 +86,22 @@ public class Menu {
                 System.out.println("Opção Inválida. Insira um número de 1 a 3.");
             }
         }
-        return new Task(name, desc, date, prior, categ, status);
+        String message=" ";
+        while (true) {
+            System.out.println("Gostaria de acionar um alarme para essa tarefa? (s/n)");
+            String input = sc.nextLine();
+            if (input.equals("n")) {
+                break;
+            } else if (input.equals("s")) {
+                System.out.print("Insira a mensage do alarme: ");
+                message = sc.nextLine();
+                break;
+            } else {
+                System.out.println("Opção Inválida. Insira 's' para sim ou 'n' para não.");
+            }
+        }
+
+        return new Task(name, desc, date, prior, categ, status, message);
     }
 
     public static void alterTask(LinkedList<Task> list, int chosen) { //option 3
@@ -251,7 +268,14 @@ public class Menu {
             System.out.println("    Nenhuma tarefa encontrada.");
         }
     }
-    public static void exit(){
-
+    public static void newAlarm(int chosen, String message, LinkedList<Task>list){
+        list.get(chosen).setAlarmMessage(message);
+    }
+    public static void exit(LinkedList<Task>list){ //option 9
+        try {
+            CsvWriter.write(list);
+        } catch (IOException e) {
+            System.out.println("File Error");
+        }
     }
 }

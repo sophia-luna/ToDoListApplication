@@ -23,6 +23,8 @@ public class CsvWriter {
             line.append(task.getCategory());
             line.append(',');
             line.append(task.getStatus());
+            line.append(',');
+            line.append(task.getAlarmMessage());
             line.append("\n");
             fileWriter.write(line.toString());
         }
