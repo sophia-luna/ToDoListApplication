@@ -1,4 +1,4 @@
-public class Task {
+public class Task implements Comparable<Task> {
     private String name;
     private String description;
     private String dueDate;
@@ -58,5 +58,11 @@ public class Task {
     }
     public void setStatus(String status){
         this.status=status;
+    }
+    @Override
+    public int compareTo(Task task) {
+        int thisAux=Integer.parseInt(this.priority);
+        int thatAux=Integer.parseInt(task.getPriority());
+        return thatAux-thisAux;
     }
 }

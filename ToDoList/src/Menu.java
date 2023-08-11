@@ -1,4 +1,5 @@
 import javax.sound.midi.Soundbank;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -138,6 +139,7 @@ public class Menu {
                 }
             }
             list.get(chosen).setPriority(prior);
+            list.sort(Comparator.naturalOrder());
         } else if (input.equals("5")) {
             System.out.print("Nova Categoria: ");
             String category = sc.nextLine();

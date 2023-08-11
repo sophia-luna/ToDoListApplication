@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -17,6 +18,7 @@ public class Main {
                 }
                 else if(input.equals("2")){
                     list.add(Menu.createTask());
+                    list.sort(Comparator.naturalOrder());
                 }
                 else if(input.equals("3")){
                     Menu.displayList(list);
