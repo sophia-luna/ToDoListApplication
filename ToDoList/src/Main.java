@@ -1,10 +1,12 @@
+import java.io.IOException;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList<Task> list = new LinkedList<Task>();
+        LinkedList<Task> list = CsvReader.read();
+        list.sort(Comparator.naturalOrder());
         while(true){
             Menu.displayMenu();
             Scanner sc=new Scanner(System.in);
@@ -64,6 +66,11 @@ public class Main {
                     Menu.filterByDate(list);
                 }
                 else {
+                    try {
+                        CsvWriter.write(list);
+                    } catch (IOException e) {
+                        System.out.println("File Error");
+                    }
                     break;
                 }
             }
