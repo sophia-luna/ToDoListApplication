@@ -31,3 +31,32 @@ Configure alarmes ao criar uma nova tarefa ou ao adicione um alarme a uma tarefa
 #### Persistência de Dados
 As tarefas são armazenadas em um arquivo CSV, garantindo que os dados sejam mantidos mesmo após o fechamento do programa.
 
+
+# To-do List Frontend HTML, Css, Javascript
+## Visão Geral
+Esta é uma simples aplicação de lista de tarefas construída usando HTML, CSS e JavaScript. Ela permite aos usuários gerenciar suas tarefas listando, criando, excluindo, alterando e filtrando tarefas por status (To do, Doing, Done).
+
+### Tabela de Conteúdos
+- [Recursos](#recursos)
+- [Uso](#uso)
+
+  
+### Recursos
+- Listar tarefas com seus respectivos status (A Fazer, Em Andamento, Concluída).
+- Criar novas tarefas.
+- Excluir tarefas existentes.
+- Alterar tarefas para mudar qualquer uma de suas especificações.
+- Filtrar tarefas por status.
+
+### Uso
+- Listando Tarefas: Quando você abrir a aplicação, verá uma lista de tarefas e o filtro selecionado para mostrar toodas.
+  
+- Filtrando Tarefas: Use as opções de filtro para visualizar tarefas com base em seu status.
+
+- Criando Novas Tarefas: Para criar uma nova tarefa, clique no botão "Create new task" no navbar ou use o mouse manualmente para chegar a seção de adicionar tarefa. Insira as especificações da tarefa no formulario. Clique em "Add" para criar a tarefa.
+
+- Alterando Tarefas: Para editar uma tarefa, clique no botão "Alter task" no navbar ou use o mouse manualmente para chegar a seção de alterar tarefas. Você pode alterar qualquer uma das especificações da tarefa, basta seleciona-la.
+  
+- Excluindo Tarefas: Para excluir uma tarefa, clique no botão "Delete task" no navbar ou use o mouse manualmente para chegar a seção de deletar tarefas.
+
+
