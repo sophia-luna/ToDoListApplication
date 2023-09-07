@@ -30,6 +30,4 @@ Configure alarmes ao criar uma nova tarefa ou ao adicione um alarme a uma tarefa
 
 #### Persistência de Dados
 As tarefas são armazenadas em um arquivo CSV, garantindo que os dados sejam mantidos mesmo após o fechamento do programa.
-Importante lembrar de setar o path para seu arquivo CSV.
 
-![Captura de tela de 2023-08-11 16-23-16](https://github.com/sophia-luna/ToDoListApplication/assets/137638625/2e854b93-0608-4719-9c15-dfcb3e31e626)
