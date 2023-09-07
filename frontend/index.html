@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet"></head>
+    <title>To-Do List</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <img src="img/3.avif">
+        <h2>to-do list</h2>
+        <nav>
+            <ul id="navbar-list">
+                <li> <a href="#list-task"> list tasks </a> </li>
+                <li> <a href="#add-task"> create new task </a> </li>
+                <li> <a href="#alter-task"> alter task </a> </li>
+                <li> <a href="#delete-task"> delete task </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banner">
+        <div id="banner-info">
+            <h2>A task tracker to help you keep up with your work.</h2>
+        </div>
+    </div>
+
+    <section id="to-do-list">
+        <h3>My To-Do List</h3>
+
+        <div>
+            <section id="list-task">
+                <div id="list-notif">
+                    <h2>*your to-do list is empty*</h2>
+                </div>
+
+                <div id="task-list">
+                
+                </div>
+
+                <div id="filter-tasks">
+                    <label for="filter"><p>Filter by: </p></label>
+                    <select id="filter">
+                        <option value="all">All</option>
+                        <option value="To do">To Do</option>
+                        <option value="Doing">Doing</option>
+                        <option value="Done">Done</option>
+                    </select>
+                </div>
+    
+            </section>
+
+        </div>
+
+        <div>
+            <section id="see-task">
+                <h2>see task details:</h2>
+                <div id="task-details">
+
+                </div>
+
+                <label for="see-task-selection"><p>Select task: </p></label>
+                <select id="see-task-selection">
+                    <!-- Tasks will be dynamically added here -->
+                </select>
+                </br>
+
+            </section>
+
+        </div>
+
+        <div>
+            <section id="add-task">
+                <h2>create new task:</h2>
+
+                <label for="add-name"><p>Task name: </p></label>
+                <input type="text" id="add-name" placeholder="Name:">
+                </br>
+
+                <label for="add-description"><p>Task description: </p></label>
+                <input type="text" id="add-description" placeholder="Description">
+                </br>
+
+                <label for="add-due-date"><p>Task due date: </p></label>
+                <input type="date" id="add-due-date" name="due-date">
+                </br>
+
+                <label for="add-category"><p>Task category: </p></label>
+                <input type="text" id="add-category" placeholder="Category:">
+                </br>
+
+                <label for="add-name"><p>Task name: </p></label>
+                <label for="priority"><p>Priority: </p></label>
+                <select id="add-priority">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </br>
+
+                <label for="status"><p>Status: </p></label>
+                <select id="add-status">
+                    <option value="To do">To Do</option>
+                    <option value="Doing">Doing</option>
+                    <option value="Done">Done</option>
+                </select>
+                </br>
+
+                <button id="addButton">Add task</button>
+            </section>
+        </div>
+
+        <div>
+            <section id="alter-task">
+                <h2>alter task:</h2>
+
+                <label for="alter-task-selection"><p>Select task: </p></label>
+                <select id="alter-task-selection">
+                    <!-- Tasks will be dynamically added here -->
+                </select>
+                </br>
+
+                <label for="alter-name"><p>New name: </p></label>
+                <input type="text" id="alter-name" placeholder="Name:" value="default">
+                </br>
+
+                <label for="alter-description"><p>New description: </p></label>
+                <input type="text" id="alter-description" placeholder="Description" value="default">
+                </br>
+
+                <label for="alter-due-date"><p>New due date: </p></label>
+                <input type="date" id="alter-due-date" name="due-date" value="0001-01-01">
+                </br>
+
+                <label for="alter-category"><p>New Category: </p></label>
+                <input type="text" id="alter-category" placeholder="Category:" value="default">
+                </br>
+
+                <label for="alter-priority"><p>New priority: </p></label>
+                <select id="alter-priority">
+                    <option value="default">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </br>
+
+                <label for="alter-status"><p>New status: </p></label>
+                <select id="alter-status">
+                    <option value="default">None</option>
+                    <option value="todo">To Do</option>
+                    <option value="doing">Doing</option>
+                    <option value="done">Done</option>
+                </select>
+                </br>
+                <button id="alterButton">Alter task</button>
+            </section>
+        </div>
+
+        <div>
+            <section id="delete-task">
+                <h2>delete task:</h2>
+
+                <label for="delete-task-selection"><p>Select task: </p></label>
+                <select id="delete-task-selection">
+                    <!-- Tasks will be dynamically added here -->
+                </select>
+                </br>
+
+                <button id="deleteButton">Delete</button>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <p> Developed by Sophia Luna. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

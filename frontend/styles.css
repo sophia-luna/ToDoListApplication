@@ -1,0 +1,387 @@
+/* geral */
+body, p, h1, h2{
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+    font-size:30px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+
+
+/* navbar */
+#navbar{
+    background-color: #ffe950;
+    color:#104551;
+    padding: 0 25px;
+    height: 60px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav {
+    display: inline-block;
+}
+
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+
+}
+
+#navbar img{
+    height: 40px;
+    position: absolute;
+    top: 10px;
+}
+
+#navbar nav{
+    float: right;
+}
+
+#navbar ul {
+    margin-top: 22px;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar-list li a{
+    text-decoration: none;
+    color:#087fc7;
+}
+
+#navbar-list li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+
+/* banner */
+#banner {
+    height: 50vh;
+    background-image: url('img/backg2.webp');
+    background-size: cover;
+    padding-top: 15vh;  
+}
+
+#banner-info {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #104551;
+    padding: 100px;
+}
+
+#banner-info h2{
+    background-color: #ffe950;
+    font-weight: bold;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px;
+}
+
+
+
+
+/*to do list*/
+#to-do-list{
+    text-align: center;
+    background-color: #087fc7;
+    color: #fff;
+    padding-top: 50px;
+    height: 2700px;
+}
+
+#to-do-list h3{
+    color: #104551;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* list task */
+#list-task{
+    background-color: #fffbc6;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#list-task h2{
+    color: #ff6150;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#task-list{
+ 
+    width: 40%;
+    color: #ff6150;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    /*border: 1px solid #ff6150;
+    border-radius: 10px;*/
+}
+
+#task-list ol{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#task-list li{
+    border: 1px solid #ff6150;
+    height: 30px;
+}
+
+#filter-tasks{
+    color: #ff6150;
+    margin-bottom: 20px;
+}
+
+#filter-tasks p{
+    font-weight: bold;
+}
+
+#filter{
+    width: 100px;
+    height: 30px;
+}
+
+
+/* see task details*/
+#see-task{
+    background-color: #fffbc6;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#see-task h2{
+    color: #ff6150;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#see-task p{
+    color: #ff6150;
+    font-weight: bold;
+}
+
+#task-details{
+    width: 40%;
+    color: #ff6150;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#see-task-selection{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    
+}
+
+
+
+/*create new task */
+
+#add-task{
+    background-color: #fffbc6;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#add-task p{
+    color: #ff6150;
+    font-weight: bold;
+}
+
+#add-task h2{
+    color: #ff6150;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#add-name{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#add-description{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#add-due-date{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#add-priority{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+#add-category{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#add-status{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+#addButton{
+    margin-bottom: 40px;
+    width: 100px;
+    height: 30px;
+}
+
+
+/* alter task */ 
+#alter-task{
+    background-color: #fffbc6;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#alter-task h2{
+    color: #ff6150;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#alter-task p{
+    font-weight: bold;
+    color: #ff6150;
+}
+
+#alter-task-selection{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+#alter-name{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#alter-description{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#alter-due-date{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#alter-priority{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+#alter-category{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#alter-status{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+#alterButton{
+    margin-bottom: 40px;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+
+
+/* delete task */
+#delete-task{
+    background-color: #fffbc6;
+    color: #ff6150;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+#delete-task h2{
+    color: #ff6150;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#delete-task p{
+    font-weight: bold;
+    color: #ff6150;
+}
+
+#delete-task-selection{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    
+}
+
+#deleteButton{
+    margin-bottom: 40px;
+    width: 100px;
+    height: 30px;
+}
+
+#footer p{
+    color: #ffe950;
+    font-weight: bold;
+    font-size: large;
+}
+
